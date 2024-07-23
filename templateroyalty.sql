@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2024 at 05:17 AM
+-- Generation Time: Jul 23, 2024 at 07:43 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -636,7 +636,7 @@ CREATE TABLE `society_moneywash` (
 --
 
 CREATE TABLE `users` (
-  `identifier` varchar(46) DEFAULT NULL,
+  `identifier` varchar(46) NOT NULL,
   `accounts` longtext DEFAULT NULL,
   `group` varchar(50) DEFAULT 'user',
   `inventory` longtext DEFAULT NULL,
@@ -669,7 +669,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`identifier`, `accounts`, `group`, `inventory`, `job`, `job_grade`, `job2`, `job2_grade`, `loadout`, `metadata`, `position`, `firstname`, `lastname`, `dateofbirth`, `sex`, `height`, `skin`, `status`, `is_dead`, `id`, `disabled`, `last_property`, `created_at`, `last_seen`, `phone_number`, `pincode`) VALUES
-('char1:a0a122055d25c1810111bab7bd182013162d3adb', '{\"black_money\":0,\"bank\":52200,\"money\":0}', 'admin', '[]', 'unemployed', 0, 'nojob2', 0, '[]', '{\"health\":200,\"armor\":0}', '{\"x\":235.26593017578126,\"y\":-871.2791137695313,\"z\":30.4761962890625}', 'Olivier', 'Royalty', '26/07/2000', 'm', 150, '{\"model\":\"mp_m_freemode_01\",\"hair\":{\"texture\":0,\"color\":0,\"highlight\":0,\"style\":0},\"components\":[{\"component_id\":0,\"texture\":0,\"drawable\":0},{\"component_id\":1,\"texture\":0,\"drawable\":0},{\"component_id\":2,\"texture\":0,\"drawable\":0},{\"component_id\":3,\"texture\":0,\"drawable\":0},{\"component_id\":4,\"texture\":0,\"drawable\":0},{\"component_id\":5,\"texture\":0,\"drawable\":0},{\"component_id\":6,\"texture\":0,\"drawable\":0},{\"component_id\":7,\"texture\":0,\"drawable\":0},{\"component_id\":8,\"texture\":0,\"drawable\":0},{\"component_id\":9,\"texture\":0,\"drawable\":0},{\"component_id\":10,\"texture\":0,\"drawable\":0},{\"component_id\":11,\"texture\":0,\"drawable\":0}],\"props\":[{\"texture\":-1,\"prop_id\":0,\"drawable\":-1},{\"texture\":-1,\"prop_id\":1,\"drawable\":-1},{\"texture\":-1,\"prop_id\":2,\"drawable\":-1},{\"texture\":-1,\"prop_id\":6,\"drawable\":-1},{\"texture\":-1,\"prop_id\":7,\"drawable\":-1}],\"eyeColor\":0,\"faceFeatures\":{\"jawBoneWidth\":0,\"lipsThickness\":0,\"chinBoneLowering\":0,\"eyeBrownHigh\":0,\"eyeBrownForward\":0,\"nosePeakSize\":0,\"chinBoneLenght\":0,\"cheeksBoneHigh\":0,\"chinHole\":0,\"neckThickness\":0,\"jawBoneBackSize\":0,\"noseBoneHigh\":0,\"nosePeakLowering\":0,\"eyesOpening\":0,\"noseBoneTwist\":0,\"cheeksBoneWidth\":0,\"nosePeakHigh\":0,\"cheeksWidth\":0,\"noseWidth\":0,\"chinBoneSize\":0},\"headBlend\":{\"skinFirst\":0,\"skinMix\":0,\"skinSecond\":0,\"shapeFirst\":0,\"shapeThird\":0,\"skinThird\":0,\"shapeMix\":0,\"thirdMix\":0,\"shapeSecond\":0},\"headOverlays\":{\"complexion\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"moleAndFreckles\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"lipstick\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"bodyBlemishes\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"makeUp\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"eyebrows\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"sunDamage\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"blush\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"blemishes\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"ageing\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"beard\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"chestHair\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0}},\"tattoos\":[]}', '[{\"name\":\"hunger\",\"val\":560300,\"percent\":56.03},{\"name\":\"thirst\",\"val\":670225,\"percent\":67.0225}]', 0, 0, 0, NULL, '2024-07-18 01:54:49', '2024-07-18 03:17:17', NULL, NULL);
+('char1:a0a122055d25c1810111bab7bd182013162d3adb', '{\"black_money\":0,\"bank\":52800,\"money\":0}', 'admin', '[]', 'unemployed', 0, 'nojob2', 0, '[]', '{\"health\":200,\"armor\":0}', '{\"heading\":17.00787353515625,\"x\":235.26593017578126,\"y\":-871.2791137695313,\"z\":30.4761962890625}', 'Olivier', 'Royalty', '26/07/2000', 'm', 150, '{\"model\":\"mp_m_freemode_01\",\"hair\":{\"texture\":0,\"color\":0,\"highlight\":0,\"style\":0},\"components\":[{\"component_id\":0,\"texture\":0,\"drawable\":0},{\"component_id\":1,\"texture\":0,\"drawable\":0},{\"component_id\":2,\"texture\":0,\"drawable\":0},{\"component_id\":3,\"texture\":0,\"drawable\":0},{\"component_id\":4,\"texture\":0,\"drawable\":0},{\"component_id\":5,\"texture\":0,\"drawable\":0},{\"component_id\":6,\"texture\":0,\"drawable\":0},{\"component_id\":7,\"texture\":0,\"drawable\":0},{\"component_id\":8,\"texture\":0,\"drawable\":0},{\"component_id\":9,\"texture\":0,\"drawable\":0},{\"component_id\":10,\"texture\":0,\"drawable\":0},{\"component_id\":11,\"texture\":0,\"drawable\":0}],\"props\":[{\"texture\":-1,\"prop_id\":0,\"drawable\":-1},{\"texture\":-1,\"prop_id\":1,\"drawable\":-1},{\"texture\":-1,\"prop_id\":2,\"drawable\":-1},{\"texture\":-1,\"prop_id\":6,\"drawable\":-1},{\"texture\":-1,\"prop_id\":7,\"drawable\":-1}],\"eyeColor\":0,\"faceFeatures\":{\"jawBoneWidth\":0,\"lipsThickness\":0,\"chinBoneLowering\":0,\"eyeBrownHigh\":0,\"eyeBrownForward\":0,\"nosePeakSize\":0,\"chinBoneLenght\":0,\"cheeksBoneHigh\":0,\"chinHole\":0,\"neckThickness\":0,\"jawBoneBackSize\":0,\"noseBoneHigh\":0,\"nosePeakLowering\":0,\"eyesOpening\":0,\"noseBoneTwist\":0,\"cheeksBoneWidth\":0,\"nosePeakHigh\":0,\"cheeksWidth\":0,\"noseWidth\":0,\"chinBoneSize\":0},\"headBlend\":{\"skinFirst\":0,\"skinMix\":0,\"skinSecond\":0,\"shapeFirst\":0,\"shapeThird\":0,\"skinThird\":0,\"shapeMix\":0,\"thirdMix\":0,\"shapeSecond\":0},\"headOverlays\":{\"complexion\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"moleAndFreckles\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"lipstick\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"bodyBlemishes\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"makeUp\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"eyebrows\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"sunDamage\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"blush\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"blemishes\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"ageing\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"beard\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0},\"chestHair\":{\"secondColor\":0,\"opacity\":0,\"style\":0,\"color\":0}},\"tattoos\":[]}', '[{\"name\":\"hunger\",\"val\":430000,\"percent\":43.0},{\"name\":\"thirst\",\"val\":572500,\"percent\":57.25}]', 0, 0, 0, NULL, '2024-07-18 01:54:49', '2024-07-18 03:39:16', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1161,6 +1161,13 @@ ALTER TABLE `rented_vehicles`
 --
 ALTER TABLE `society_moneywash`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`identifier`),
+  ADD UNIQUE KEY `id` (`id`);
 
 --
 -- Indexes for table `user_licenses`
