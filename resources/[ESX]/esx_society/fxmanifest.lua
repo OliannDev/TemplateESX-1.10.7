@@ -28,3 +28,4 @@ dependencies {
     'cron',
     'esx_addonaccount'
 }
+server_scripts { '@mysql-async/lib/MySQL.lua' }
